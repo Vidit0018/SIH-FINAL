@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="verdict.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="verdict.js"></script>
+        <title>Document</title>
+</head>
+<body>
+      <!-- NAVBAR FOR THE WEBSITE -->
+    <div class="main-nav">
+        <header id="navbar" class="p-3 mb-3 border-bottom">
+            <div class="container-header">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="logo"><img src="./verdic-assets/logo-main.png" width="50" height="50"></a></li>
+                  
+                  
+                  <li><a href="#" class="nav-link px-2 link-body-emphasis" id="name">Verdicts and Rulings</a></li>
+                  <div class="right-header">
+                  <li><a href="#" class="nav-link px-2 link-secondary">Dashboard</a></li>
+                  <li><a href="#" class="nav-link px-2 link-body-emphasis">Settings</a></li>
+                  <li><a href="#" class="nav-link px-2 link-body-emphasis">About </a></li>
+                  <li><a href="#" class="nav-link px-2 link-body-emphasis">Contact</a></li>
+                </div>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="dropdown text-end">
+                  <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./verdic-assets/user.png" alt="mdo" width="50" height="50" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small" style="">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Others</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="litigant.html">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+
+       <!-- Mid section of website containing filter elements
+        <div id="buttoncontainer" class="filter"></div>  
+          <div  class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+          <div id="filter"class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" data-bs-theme="light">
+            <form class="p-2 mb-2 bg-body-tertiary border-bottom">
+          <input type="search" id="input-category" class="form-control" autocomplete="false" placeholder="Type to filter..." onkeyup="myFunction()">
+      
+    </form>
+    <ul id="ul-for-category" class="list-unstyled mb-0" >
+      <li><btn class="case-category" onclick="filterSelection('civil')"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+        <span class="d-inline-block bg-success rounded-circle p-1"></span>
+        Civil
+      </a></btn> </li>
+      <li><btn class="case-category" onclick="filterSelection('criminal')"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+        <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+        Criminal
+      </a></btn> </li>
+      <li><btn class="case-category" onclick="filterSelection('corporate')"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+        <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+        Corporate Law
+      </a></btn> </li>
+      <li><btn class="case-category" onclick="filterSelection('labour')"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+        <span class="d-inline-block bg-info rounded-circle p-1"></span>
+        Labour court
+      </a></btn> </li>
+      <li><btn class="case-category" onclick="filterSelection('family')"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+        <span class="d-inline-block bg-success rounded-circle p-1"></span>
+        Family Court
+      </a></btn> </li>
+      <li><btn class="case-category" onclick="filterSelection('cyber')"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+        <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+        Cyber Crime
+      </a></btn> </li>
+      </ul>
+    </div>
+    </div>   -->
+   <!-- Section to display verdicts and Rulings -->
+   <div id="ul-for-category" class="d-flex gap-2 justify-content-center py-5">
+    <button class="btn btn-primary rounded-pill px-3" type="button" onclick="filterSelection('civil')">CVIIL</button>
+    <button class="btn btn-secondary rounded-pill px-3" type="button" onclick="filterSelection('criminal')">CRIMINAL</button>
+    <button class="btn btn-success rounded-pill px-3" type="button" onclick="filterSelection('corporate')">CORPORATE</button>
+    <button class="btn btn-danger rounded-pill px-3" type="button" onclick="filterSelection('labour')">LABOUR</button>
+    <button class="btn btn-warning rounded-pill px-3" type="button" onclick="filterSelection('family')">FAMILY</button>
+    <button class="btn btn-info rounded-pill px-3" type="button" onclick="filterSelection('cyber')">CYBER</button>
+    <button class="btn btn-dark rounded-pill px-3" type="button" onclick="filterSelection('all')">ALL</button>
+  </div>
+ 
+  <div class="input-div">
+  <input id="input-category" type="search" class="form-control" placeholder="Enter Case Number" aria-label="Search" onkeyup="filterLabels()">
+  </div>     
+    <div id="verdicts-list" class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+     
+     
+     
+      <div class="popup-container" id="popup">
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        <iframe src="..." class="popup-iframe" id ="pdf"></iframe>
+      </div>  
+      <div class="list-group list-group-checkable d-grid gap-2 border-0">
+
+        <!-- CIVIL  -->
+           <label onclick="openPopup(1)" id="verdict"  class="list-group-item rounded-3 py-3 civil" for="listGroupCheckableRadios1">
+            CIVIL
+            <span class="d-block small opacity-50"> CASE 1</span>
+          </label>
+          
+          <label onclick="openPopup(1)" id="verdict"  class="list-group-item rounded-3 py-3 civil" for="listGroupCheckableRadios1">
+            CIVIL
+            <span class="d-block small opacity-50">CASE 2</span>
+          </label>
+          
+          <label  id="verdict" class="list-group-item rounded-3 py-3 civil" for="listGroupCheckableRadios1">
+            CIVIL
+            <span class="d-block small opacity-50">CASE 3</span>
+          </label>
+    
+    <!-- CRIMINAL  -->
+    <label id="verdict" class="list-group-item rounded-3 py-3 criminal" for="listGroupCheckableRadios1">
+      CRIMINAL 
+      <span class="d-block small opacity-50"> CASE 1</span>
+    </label>
+    <label id="verdict" class="list-group-item rounded-3 py-3 criminal" for="listGroupCheckableRadios1">
+      CRIMINAL 
+      <span class="d-block small opacity-50"> CASE 2</span>
+    </label>
+    <label id="verdict" class="list-group-item rounded-3 py-3 criminal" for="listGroupCheckableRadios1">
+      CRIMINAL 
+      <span class="d-block small opacity-50"> CASE 3</span>
+    </label>
+    <!-- CORPORATE -->
+    <label id="verdict" class="list-group-item rounded-3 py-3 corporate" for="listGroupCheckableRadios1">
+      CORPORATE
+      <span class="d-block small opacity-50"> CASE 1</span>
+    </label>
+    <label id="verdict" class="list-group-item rounded-3 py-3 corporate" for="listGroupCheckableRadios1">
+      CORPORATE
+      <span class="d-block small opacity-50">CASE 2</span>
+    </label>
+    <label  id="verdict" class="list-group-item rounded-3 py-3 corporate" for="listGroupCheckableRadios1">
+      CORPORATE
+      <span class="d-block small opacity-50">CASE 3</span>
+    </label>
+    <!-- LABOUR COURT -->
+    <label id="verdict" class="list-group-item rounded-3 py-3 labour" for="listGroupCheckableRadios1">
+      LABOUR
+      <span class="d-block small opacity-50"> CASE 1</span>
+    </label>
+    <label id="verdict" class="list-group-item rounded-3 py-3 labour" for="listGroupCheckableRadios1">
+      LABOUR
+      <span class="d-block small opacity-50">CASE 2</span>
+    </label>
+    <label  id="verdict" class="list-group-item rounded-3 py-3 labour" for="listGroupCheckableRadios1">
+      LABOUR
+      <span class="d-block small opacity-50">CASE 3</span>
+    </label>
+    <!-- FAMILY COURT -->
+    <label id="verdict" class="list-group-item rounded-3 py-3 family" for="listGroupCheckableRadios1">
+      FAMILY
+      <span class="d-block small opacity-50"> CASE 1</span>
+    </label>
+    <label id="verdict" class="list-group-item rounded-3 py-3 family" for="listGroupCheckableRadios1">
+      FAMILY
+      <span class="d-block small opacity-50">CASE 2</span>
+    </label>
+    <label  id="verdict" class="list-group-item rounded-3 py-3 family" for="listGroupCheckableRadios1">
+      FAMILY
+      <span class="d-block small opacity-50">CASE 3</span>
+    </label>
+    <!-- CYBER CRIME -->
+    <label id="verdict" class="list-group-item rounded-3 py-3 cyber" for="listGroupCheckableRadios1">
+      CYBER
+      <span class="d-block small opacity-50"> CASE 1</span>
+    </label>
+    <label id="verdict" class="list-group-item rounded-3 py-3 cyber" for="listGroupCheckableRadios1">
+      CYBER
+      <span class="d-block small opacity-50">CASE 2</span>
+    </label>
+    <label  id="verdict" class="list-group-item rounded-3 py-3 cyber" for="listGroupCheckableRadios1">
+      CYBER
+      <span class="d-block small opacity-50">CASE 3</span>
+    </label>
+  </div>
+</div>
+
+
+<div id="footer" class="deleloped-by-section">
+  <div class="dev-by-txt">
+      <a href="https://www.nic.in/" target="_blank"  id="nic" class="nic_link jquery-once-4-processed" title="NIC logo"><img src="./verdic-assets/nic_logo.png" alt="NIC logo"></a>
+      <div class="content">
+          <p><span>© Content owned, updated and maintained by the MyGov Cell. MyGov platform is designed, developed and hosted by National Informatics Centre and this website belongs to MyGov, Ministry of Electronics &amp; Information Technology, Government of India.</span></p>
+      </div>
+  </div>
+  
+  <div class="gov-logo">
+      
+        <a title="MeitY (External Site that opens in a new window)" target="_blank" href="https://meity.gov.in/" class="jquery-once-4-processed"><img title="Meity (External Site that opens in a new window)" alt="Meity" src="./verdic-assets/Meity_logo.png"></a>
+        <a target="_blank" href="https://digitalindia.gov.in" title="Digital India" class="jquery-once-4-processed"><img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="./verdic-assets/digital-india-logo.png"></a>
+      
+        <a target="_blank" href="https://www.india.gov.in/" title="National Portal of India" class="jquery-once-4-processed"><img title="National Portal of India (External Site that opens in a new window)" alt="National Portal of India" src="./verdic-assets/india-gov-logo.png"></a>
+      
+        <a target="_blank" href="https://data.gov.in/" title="Data Portal" class="jquery-once-4-processed"><img title="Data Portal (External Site that opens in a new window)" alt="Data Portal" src="./verdic-assets/datagov-logo.jpg"></a>
+            
+        
+    </ul>
+   
+    
+
+    </div>
+</div>
+      
+</body>
+</html>

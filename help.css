@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: ; */
+    background-image: url(./assets/bg.jpg);
+    background-size: cover;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 250px;
+    background: url(https://www.india.gov.in/sites/all/themes/adaptivetheme/npi_adaptive/images/bg-noise.png);
+}
+.nav-bar img{
+    /* margin-right: 80px; */
+    height: 105px;
+    width: 65px;
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+   
+}
+.nav-bar h2{
+   
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid rgb(248, 255, 149,0.65);
+    border-radius: 8px;
+    padding: 10px;
+    background-color:rgb(248, 255, 149,0.65);
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+.answer.show{
+    display: block;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #3b3d42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    display: flex;
+   /* justify-content: space-evenly; */
+   gap: 250px;
+    align-items: center;
+
+}
+.footer-text a {
+  text-decoration: none;
+  color: #fff;
+ 
+}
+.footer-text i{
+    font-size: 2rem;
+    color: #df920d;
+}
+
+.footer-text a span {
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+
+.faq-container h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-item{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* Reset default margin and padding for the entire page */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header element */
+header {
+    background-color: rgb(74, 194, 246); /* Background color for the header */
+    color: #fff; /* Text color for the header */
+    text-align: center; /* Center-align text and logo within the header */
+    padding: 20px 0; /* Add padding to the top and bottom of the header */
+}
+
+/* Style the logo */
+img {
+    max-width: 100px; /* Set the maximum width for the logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+    margin-left: 10%;
+    margin-right: 15%;
+
+}
+
+/* Style the heading (h1) within the header */
+h1 {
+    font-size: 3rem; /* Adjust the font size for the heading */
+    margin-top: 10px;
+    color: black;/* Add some space above the heading */
+    font-family: 'Poppins', sans-serif;
+
+}
+.top{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+@media (max-width: 768px) {
+    .top {
+      flex-direction: column;
+      gap: 0px;
+      align-items: flex-start;
+    }
+    img{
+        margin-left: 35%;
+    }
+  }
+
+/* Add additional styles as needed */
+

@@ -1,0 +1,290 @@
+:root {
+	--primary-font-family:  'Poppins', sans-serif;
+
+	
+}
+.text-bg-dark{
+    background-color: aqua;
+}
+.logo{
+    margin-right: 10px;
+}
+#web-pg-name{
+    margin-right: 100px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+}
+.right-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-header li{
+    font-size: 1.2rem;
+    font-family: var(--primary-font-family);
+    
+}
+.nav-link px-2 link-secondary{
+    color: white;
+}
+#navbar{
+    background-color:rgb(255, 176, 0);
+}
+#footer{
+    background-color:rgb(40, 40, 43);
+    display: flex;
+    position: absolute;
+}
+.content p{
+    color: white;
+    font-family: var(--primary-font-family);
+}
+.dev-by-txt{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    margin-right: 50px;
+    
+}
+.gov-logo{
+    margin-left: 30px;
+    margin-top: 100px;
+    display: flex;
+    
+    gap:35px;
+    height:200px
+}
+
+.developed-by-section{
+    height: 150px;
+}
+body{
+    background-image: url('./template-assets/mosaic-2721425.jpg');
+    background-size: cover;
+    
+}
+#input-category{
+
+    width: 60%;
+}
+.input-div{
+    display: flex;
+    justify-content: center;
+}
+#nic{
+    margin-left: 50px;
+} 
+
+/* Registration Form CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+} 
+
+/*body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}*/
+
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color:rgb(248, 255, 149,0.65);
+    border-radius: 6px;
+    margin: 0 15px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20%;
+}
+
+.details{
+    background: transparent;
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color:rgb(248, 255, 149,0.65);
+}
+
+
+.container form .details {
+    margin-top: 30px;
+}
+
+.container form .details.ID {
+    margin-top: 10px;
+}
+
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 2px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 2px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input::is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[input="date"]:valid{
+    color: #333;
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #265df2;
+}
+
+form button i{
+    margin: 0 6px;
+}
+
+.input-field input:focus {
+    outline: 0;
+}
+
+.input-field.success input {
+    border-color: #09c372;
+}
+
+.input-field.success select{
+    border-color: #09c372;
+}
+
+.input-field.error input {
+    border-color: #ff3860;
+}
+
+.input-field.error select {
+    border-color: #ff3860;
+}
+
+.input-field .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 16px;
+} 
+
+ @media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    for .fields .input-field{
+        width: 100%;
+    }
+}

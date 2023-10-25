@@ -1,0 +1,35 @@
+#danger{
+    background-color:rgb(216, 0, 50);
+    color: white;
+}
+#danger:hover{
+    background-color: red;
+}
+#danger a{
+    text-decoration: none;
+    color: white;
+}
+#back-button a{
+    text-decoration: none;
+    color: white;
+}
+.my-5{
+    margin-top: 0px;
+}
+#container{
+    background-image: url("./assets/bg.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    margin-top: 0rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+#img-container{
+    margin-bottom: 0px;
+}
+#paragraph{
+    font-weight: 500;
+}
